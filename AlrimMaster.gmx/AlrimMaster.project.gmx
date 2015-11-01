@@ -9,6 +9,10 @@
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_mouse_cursor</sprite>
     <sprite>sprites\spr_draggable_test</sprite>
+    <sprite>sprites\spr_miner</sprite>
+    <sprite>sprites\spr_archer</sprite>
+    <sprite>sprites\spr_farmer</sprite>
+    <sprite>sprites\spr_warrior</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\blg_grid</background>
@@ -16,8 +20,17 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_cursor</object>
-    <object>objects\obj_draggable_test</object>
+    <object>objects\obj_dragable1</object>
+    <object>objects\obj_dragable2</object>
     <object>objects\obj_room_settings</object>
+    <object>objects\obj_miner1</object>
+    <object>objects\obj_miner2</object>
+    <object>objects\obj_archer2</object>
+    <object>objects\obj_archer1</object>
+    <object>objects\obj_farmer1</object>
+    <object>objects\obj_farmer2</object>
+    <object>objects\obj_warrior1</object>
+    <object>objects\obj_warrion2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
