@@ -20,8 +20,8 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_cursor</object>
-    <object>objects\obj_dragable1</object>
-    <object>objects\obj_dragable2</object>
+    <object>objects\obj_draggable1</object>
+    <object>objects\obj_draggable2</object>
     <object>objects\obj_room_settings</object>
     <object>objects\obj_miner1</object>
     <object>objects\obj_miner2</object>
@@ -30,7 +30,7 @@
     <object>objects\obj_farmer1</object>
     <object>objects\obj_farmer2</object>
     <object>objects\obj_warrior1</object>
-    <object>objects\obj_warrion2</object>
+    <object>objects\obj_warrior2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
