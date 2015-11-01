@@ -17,6 +17,7 @@
   <objects name="objects">
     <object>objects\obj_cursor</object>
     <object>objects\obj_draggable_test</object>
+    <object>objects\obj_room_settings</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

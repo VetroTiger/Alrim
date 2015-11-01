@@ -25,11 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Checks for Grab
+            <string>// variables
 
-grab = false;
-xx = 0;
-yy = 0;
+image_speed = 0
+image_index = 0
+chosen = false
+gridsize = 32;
+movespeed = 4;
+ismoving = false;
+movetimer = 0;
+speedx = 0;
+speedy = 0;
 
 
 </string>
@@ -54,71 +60,78 @@ yy = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Checks for Grab
+            <string>right = keyboard_check_pressed(vk_right)
+up = keyboard_check_pressed(vk_up)
+left =keyboard_check_pressed(vk_left)
+down =keyboard_check_pressed(vk_down)
+chosenkey = keyboard_check(vk_enter)
+notchosen = keyboard_check_released(vk_enter)
 
-if (grab == false)
-    { exit }
-else
+if (place_meeting(x,y,obj_cursor))
+{
+if chosenkey
+    {chosen = true}
+}
+
+if (chosen == true)
+{
+image_index = 1
+if ismoving == false
     {
-    x = mouse_x + xx;
-    y = mouse_y + yy;
+        if down
+       {  
+        ismoving = true;
+        movetimer = gridsize
+        speedx = 0;
+        speedy = movespeed;
+        }
+        if up
+       {  
+        ismoving = true;
+        movetimer = gridsize
+        speedx = 0;
+        speedy = -movespeed;
+        }
+        if left
+       {  
+        ismoving = true;
+        movetimer = gridsize
+        speedx = -movespeed;
+        speedy = 0;
+        }
+        if right
+       {  
+        ismoving = true;
+        movetimer = gridsize
+        speedx = movespeed;
+        speedy = 0;
+        }
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Releases Grab
 
-grab = false;
-depth = 0;
+if ismoving == true
+    {
+    x += speedx;
+    y += speedy;
+    movetimer -= movespeed;
+    if movetimer == 0
+        {ismoving = false}
+    }
+if notchosen
+    {chosen = false}
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Grabs
 
-grab = true;
-depth = -1;
-//Get click position
-xx = x - mouse_x;
-yy = y - mouse_y;
+    
+}
+else 
+{
+image_index = 0
+}
+
+
+
+
+
+
 
 </string>
           </argument>
