@@ -25,13 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// variables
+            <string>///Variable Initialization
+
+// variables
 
 image_speed = 0
 image_index = 0
 chosen = false
 gridsize = 32;
-movespeed = 4;
+movespeed = 8;
 ismoving = false;
 movetimer = 0;
 speedx = 0;
@@ -60,7 +62,9 @@ speedy = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>right = keyboard_check_pressed(vk_right)
+            <string>///Dragging and Checking for Push
+
+right = keyboard_check_pressed(vk_right)
 up = keyboard_check_pressed(vk_up)
 left =keyboard_check_pressed(vk_left)
 down =keyboard_check_pressed(vk_down)
