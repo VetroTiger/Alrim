@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grab = false;
+            <string>///Checks for Grab
+
+grab = false;
 xx = 0;
 yy = 0;
 
@@ -52,7 +54,9 @@ yy = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (grab == false)
+            <string>///Checks for Grab
+
+if (grab == false)
     { exit }
 else
     {
@@ -81,7 +85,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grab = false;
+            <string>///Releases Grab
+
+grab = false;
 depth = 0;
 
 </string>
@@ -106,7 +112,9 @@ depth = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grab = true;
+            <string>///Grabs
+
+grab = true;
 depth = -1;
 //Get click position
 xx = x - mouse_x;
