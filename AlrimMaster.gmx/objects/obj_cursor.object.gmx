@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0
+            <string>///Cursor Initialization
+
+image_speed = 0
 image_index = 0
 
 window_set_cursor(cr_none);
@@ -51,7 +53,9 @@ window_set_cursor(cr_none);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>right = keyboard_check_pressed(vk_right)
+            <string>///Cursor Movement
+
+right = keyboard_check_pressed(vk_right)
 up = keyboard_check_pressed(vk_up)
 left =keyboard_check_pressed(vk_left)
 down =keyboard_check_pressed(vk_down)
